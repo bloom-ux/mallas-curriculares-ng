@@ -1,0 +1,21 @@
+{
+  "name": "bloom-ux-mallas-curriculares",
+  "version": "0.1.0",
+  "description": "Administración avanzada de Mallas Curriculares",
+  "main": "js/admin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "education",
+    "curriculum",
+    "WordPress"
+  ],
+  "author": "Bloom User Experience <hola@bloom-ux.com>",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "vue": "^2.1.10",
+    "vue-color": "^2.0.5",
+    "vuedraggable": "^2.8.3-rc0"
+  }
+}

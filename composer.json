@@ -1,0 +1,20 @@
+{
+    "name": "bloom-ux/mallas-curriculares-ng",
+    "description": "Administración avanzada de mallas curriculares",
+    "type": "wordpress-plugin",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Felipe Lavín Z.",
+            "email": "felipe@bloom-ux.com"
+        }
+    ],
+    "require": {
+        "mexitek/phpcolors": "^0.4.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    }
+}
