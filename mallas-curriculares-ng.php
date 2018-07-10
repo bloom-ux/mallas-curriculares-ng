@@ -8,7 +8,6 @@ Author: Felipe Lavín - Bloom User Experience
 Author URI: https://bloom-ux.com
 License: GPL-3.0-or-later
 */
-use Curricula;
 
 define('CURRICULUM_VERSION', '0.1.0');
 
@@ -25,6 +24,8 @@ add_action('plugins_loaded', function(){
 });
 add_action('init', function(){
 	Curricula\Curriculum::register_post_type();
+	$shortcode = new Curricula\Shortcode();
+	$shortcode->init();
 });
 
 /**

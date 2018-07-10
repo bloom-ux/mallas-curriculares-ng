@@ -2,7 +2,7 @@
     "name": "bloom-ux/mallas-curriculares-ng",
     "description": "Administración avanzada de mallas curriculares",
     "type": "wordpress-plugin",
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Felipe Lavín Z.",
@@ -10,8 +10,12 @@
         }
     ],
     "require": {
-        "mexitek/phpcolors": "^0.4.0"
+        "mexitek/phpcolors": "^0.4.0",
+        "composer/installers": "~1.0",
+        "wpackagist-plugin/shortcode-ui": "~0.7",
+        "wpackagist-plugin/shortcode-ui-richtext": "^1"
     },
+    "homepage": "https://github.com/bloom-ux/mallas-curriculares-ng",
     "autoload": {
         "classmap": [
             "src/"

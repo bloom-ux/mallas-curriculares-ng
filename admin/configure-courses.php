@@ -103,6 +103,10 @@
 								<label for="curriculum-subject__description-field">Descripción</label>
 								<textarea name="description" id="curriculum-subject__description-field" cols="30" rows="5" class="widefat" v-model:value="new_subject.description"></textarea>
 							</div>
+							<div class="curriculum-subject__field">
+								<label for="curriculum-subject__credits-field">Créditos</label>
+								<input type="number" name="credits" id="curriculum-subject__credits-field" class="small-text" v-model="new_subject.credits">
+							</div>
 							<div class="new-curriculum-subject__actions curriculum-subject__actions">
 								<button type="button" class="button button-primary" v-on:click="subject__create_add( module_index )">Añadir</button>
 								<button type="button" class="button" v-on:click="subject__create_cancel">Cancelar</button>

@@ -130,6 +130,7 @@ var Curriculum_UI = new Vue({
 				new_group.name = group.name;
 				new_group.id = group.id;
 				new_group.color = group.color;
+				new_group.color = color.hex;
 				color.hex = group.color;
 			});
 		},
