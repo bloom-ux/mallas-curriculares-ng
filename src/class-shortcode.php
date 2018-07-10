@@ -69,10 +69,7 @@ class Shortcode {
 					'label'  => esc_html_x('Texto advertencia', 'shortcode ui', 'bloom_curricula'),
 					'attr'   => 'disclaimer',
 					'type'   => 'textarea',
-					'encode' => true,
-					'meta'   => array(
-						'class' => 'shortcake-richtext'
-					)
+					'encode' => true
 				)
 			)
 		) );
