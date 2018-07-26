@@ -1,6 +1,6 @@
 # Instalación:
 
-Con [https://getcomposer.org/](Composer).
+Con [Composer](https://getcomposer.org/).
 
 Añadir el repositorio a composer.json, p.ej:
 
@@ -41,4 +41,4 @@ La plantilla recibirá las siguientes variables:
 
 * `$atts : array` Atributos que recibe el shortcode
 * `$curriculum : Curricula\Curriculum` Objeto de Malla Curricular
-* `$download: WP_Post` Objeto de post de la descarga asociada a la malla
+* `$download : WP_Post` Objeto de post de la descarga asociada a la malla
