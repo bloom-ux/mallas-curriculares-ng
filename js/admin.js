@@ -85,7 +85,7 @@ var Curriculum_UI = new Vue({
 				_.forEach( this.groups, function( group ){
 					if ( group.id == new_group.id ) {
 						group.name = new_group.name;
-						group.color = new_group.color;
+						group.color = Curriculum_UI.color.hex;
 					}
 				});
 			} else {
@@ -93,7 +93,7 @@ var Curriculum_UI = new Vue({
 				this.groups.push({
 					id: getUniqueId( this.groups ),
 					name: this.new_group.name,
-					color: this.new_group.color
+					color: Curriculum_UI.color.hex
 				});
 			}
 			this.new_group.is_editing = false;
@@ -130,7 +130,6 @@ var Curriculum_UI = new Vue({
 				new_group.name = group.name;
 				new_group.id = group.id;
 				new_group.color = group.color;
-				new_group.color = color.hex;
 				color.hex = group.color;
 			});
 		},

@@ -19,7 +19,7 @@
 		</div>
 		<div class="curriculum-group__new-field">
 			<label for=""></label>
-			<input type="text" class="small-text" v-model="new_group_color">
+			<input type="text" class="small-text" v-model="color">
 		</div>
 		<button type="button" class="button module__create" v-on:click="add">Guardar</button>
 	</div>
