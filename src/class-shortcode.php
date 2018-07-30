@@ -46,7 +46,7 @@ class Shortcode {
 		$ui_params = apply_filters( 'curricula_shortcode_ui_params', array(
 			'label'         => $this->get_label(),
 			'listItemImage' => 'dashicons-schedule',
-			'post_type'     => array( 'post', 'page' ),
+			'post_type'     => apply_filters('curricula_shortcode_post_types', array( 'post', 'page' ) ),
 			'attrs'         => array(
 				array(
 					'label' => esc_html_x('Selecciona la malla', 'shortcode ui', 'bloom_curricula'),
