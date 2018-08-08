@@ -209,9 +209,12 @@ class Admin {
 		$faculty_default_color = get_curriculum_base_color();
 
 		$curriculum = new Curriculum( $post->ID );
-
-		$groups  = $curriculum->get_groups();
-		$modules = $curriculum->get_modules();
+		$groups  = array_map( function( $item ){
+			return $item->jsonSerialize();
+		}, $curriculum->get_groups() );
+		$modules = array_map( function( $item ){
+			return $item->jsonSerialize();
+		}, $curriculum->get_modules() );
 
 		$curriculum_data = array(
 			'default_color' => array(
