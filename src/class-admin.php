@@ -213,7 +213,10 @@ class Admin {
 			return $item->jsonSerialize();
 		}, $curriculum->get_groups() );
 		$modules = array_map( function( $item ){
-			return $item->jsonSerialize();
+			$module = $item->jsonSerialize();
+			$module->subjects = array_map( function( $item ){
+				return $item->jsonSerialize();
+			}, $module->subjects );
 		}, $curriculum->get_modules() );
 
 		$curriculum_data = array(
