@@ -217,6 +217,7 @@ class Admin {
 			$module->subjects = array_map( function( $item ){
 				return $item->jsonSerialize();
 			}, $module->subjects );
+			return $module;
 		}, $curriculum->get_modules() );
 
 		$curriculum_data = array(
