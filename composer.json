@@ -11,8 +11,10 @@
     ],
     "require": {
         "mexitek/phpcolors": "^0.4.0",
-        "composer/installers": "~1.0",
-        "wpackagist-plugin/shortcode-ui": "~0.7"
+        "composer/installers": "^1"
+    },
+    "suggest": {
+        "wpackagist-plugin/shortcode-ui": "Añade una interfaz más amigable con el editor clásico para añadir el shortcode"
     },
     "homepage": "https://github.com/bloom-ux/mallas-curriculares-ng",
     "autoload": {
