@@ -11,7 +11,7 @@
     ],
     "require": {
         "mexitek/phpcolors": "^0.4.0",
-        "composer/installers": "^1"
+        "composer/installers": "^2"
     },
     "suggest": {
         "wpackagist-plugin/shortcode-ui": "Añade una interfaz más amigable con el editor clásico para añadir el shortcode"
@@ -21,5 +21,10 @@
         "classmap": [
             "src/"
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
     }
 }
